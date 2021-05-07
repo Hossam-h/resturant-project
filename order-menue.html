@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order-menue</title>
+    <link rel="stylesheet" href="css/order-style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="file:///D:/resturant-project/index.html">Home</a> </li>
+            <li><a href="file:///D:/resturant-project/order-menue.html">Order Online</a></li>
+            <li><a href="file:///D:/resturant-project/resturant.html"> Menue</a></li>
+            <li><a href="">Rservation</a> </li>
+            <li> <a href=""> Location & Hours</a></li>
+            <li> <a href="file:///D:/resturant-project/login.html">Login</a></li>
+        </ul>
+    </nav>
+    <!------------------------------------------------------------------------->
+        <div class="image">
+            <img src="css/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="">
+        </div>
+    <!------------------------------------------------------------------------------>
+
+  
+       
+            <div class="container-login" id="login">
+            <form action="">
+
+                <input type="email" placeholder="Enter your username"  id="user_name" required >
+                <input type="password" placeholder="Enter your password" id="my-pass" maxlength="15" required >
+                <input type="checkbox" id="checkbox"><span id="show-pass">Show your password</span>
+                <div class="clearfix"></div>
+                <input type="submit" id="log">
+                <span>Don't have account ? <a href="file:///D:/resturant-project/signup.html">Signup</a> </span>
+            
+            </form>
+            </div>
+  
+
+    <!---------------------------------------------->
+      <div class="contain-menue-online">
+          <h1>Order online</h1>
+         
+          <!--start type of meals -->
+          <div class="type-of-meals">
+                <p>  
+                    <i class="fas fa-user" id="user"></i>  <span>Hi,guest</span>  
+                </p>
+
+                <p>  
+                    <span>Menue</span> <i class="fas fa-sort-down" id="sort"></i>   
+                </p>
+                
+                <p id="type-eats">  
+                    <span>ANTIPASTI</span>   
+                      <span>PIZZA</span>
+                </p>
+          </div>
+           <!--End type of meals -->
+
+            <!--start price of meals -->
+ <div class="price-of-meals">
+                   
+                        <h3>MENUE</h3>
+                        <p>___________________________</p>
+                        <h3 id="type-meals">ANTIPASTI</h3>
+                        <p>This is a section of your menu. Give your section a brief description</p>
+
+                    <div class="contain-antipasti" id="my-antipasti">
+                            
+                            <div data-custom="house-anti">
+                                <h4>HOUSE ANTIPASTI</h4>
+                                <span>$9</span><br>
+                                <p>this an item on your menu.Give your item a brief discription</p>
+                            </div>
+
+                            <div data-custom="FRESH_ARUGULA">
+                                <h4>FRESH ARUGULA</h4>
+                                <span>$9</span><br>
+                                <p>this an item on your menu.Give your item a brief discription</p>
+                            </div>
+
+                              
+                            <div data-custom="CAPRESE">
+                                <h4>CAPRESE</h4>
+                                <span>$9</span><br>
+                                <p>this an item on your menu.Give your item a brief discription</p>
+                            </div>
+
+                            <div data-custom="PANAZANELA">
+                                <h4>PANAZANELA</h4>
+                                <span>$9</span><br>
+                                <p>this an item on your menu.Give your item a brief discription</p>
+                            </div>
+                    </div>
+<!-------------------------------------------------------------->
+<!--start PIZZA-contain--------------------------------------------------------->
+
+                    <div class="contain-pitza" id="my-Pitza">
+                                                
+                        <div data-custom="MARGHERETA">
+                            <h4>MARGHERETA</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+                        <div data-custom="FUNGHI">
+                            <h4>FUNGHI</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+                        
+                        <div data-custom="ARTICHOKE">
+                            <h4>ARTICHOKE</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+                        <div data-custom="MARINARA">
+                            <h4>MARINARA</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+                        
+                        <div data-custom="PROSCUITO">
+                            <h4>PROSCUITO</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+                        <div data-custom="PEPPERONI">
+                            <h4>PEPPERONI</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+                        
+                        <div data-custom="SALSICCIA">
+                            <h4>SALSICCIA</h4>
+                            <span>$9</span><br>
+                            <p>this an item on your menu.Give your item a brief discription</p>
+                        </div>
+
+
+                    </div>
+<!--start PIZZA-contain--------------------------------------------------------->
+                   
+</div>
+<!--End price of meals ----------------------------------------------->
+                <div class="my-order">
+                   
+                    <P> 
+                        <span>my order</span> 
+                        <span> (<input type="text" id="number-item"> item)</span>
+                    </P>
+
+                    <div class="order_requested" id="order_requested">
+
+                    </div>
+
+                    <div class="subtotal">
+                     <span>Subtotal</span> <input type="text" id="total">
+                    </div>
+
+                    <button>ORDER NOW <i class="fas fa-chevron-right"></i></button>
+                
+                </div>
+         </div>
+
+       <div class="clear-fix"></div>
+
+
+
+       <!-- strat container to add my order Antipasti-->
+
+       <div class="contain_allorder_of_antipasti">
+
+            <div class="house-antipasti-order" id="house-anti">
+                <h4 class="order">HOUSE ANTIPASTI</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+
+            <div class="fresh-angular-order" id="FRESH_ARUGULA">
+                <h4 class="order">FRESH ARUGULA</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order"> <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+            <div class="capreses-order" id="CAPRESE">
+                <h4 class="order">CAPRESE</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+
+            <div class="panazanela-order" id="PANAZANELA">
+                <h4 class="order">PANAZANELA</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+
+            
+    </div>
+
+    <!-- End container to add my order Antipasti-->
+
+
+    <!-- start container to add my order Pizza-->
+
+    <div class="contain_allorder_of_PIZZA">
+                
+            <div class="MARGHERETA-order" id="MARGHERETA">
+                <h4 class="order">MARGHERETA</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+
+            <div class="fresh-angular-order" id="FUNGHI">
+                <h4 class="order">FUNGHI</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+            <div class="capreses-order" id="ARTICHOKE">
+                <h4 class="order">ARTICHOKE</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+
+            <div class="panazanela-order" id="MARINARA">
+                <h4 class="order">MARINARA</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+            <div class="panazanela-order" id="PROSCUITO">
+                <h4 class="order">PROSCUITO</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+            <div class="panazanela-order" id="PEPPERONI">
+                <h4 class="order">PEPPERONI</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+            <div class="panazanela-order" id="SALSICCIA">
+                <h4 class="order">SALSICCIA</h4>
+                <p>$9</p>
+                <p>This is an item on your menu. Give your item a brief description</p>
+                <p>________________________________________________</p>
+                
+                <p>Quantity</p>
+
+                <p> 
+                <i class="fas fa-plus  plus"></i> <span class="quantity">0</span> <i class="fas fa-minus"></i>
+                </p> <br>
+
+                <button class="add-order">  <i class="fas fa-plus"></i>  Add to my order </button>
+
+                <i class="fas fa-times"></i>
+                
+            </div>
+
+    </div>
+
+    <!-- End container to add my order Pizza-->
+
+
+
+         
+    <div class="blur-on-all"></div>
+  
+    <footer>
+        <div class="follow">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <p>&copy 2023 by The Pizza Shop. Proudly created with team</p>
+        </div>
+
+        <div class="send">
+            <p>Join Our Mailing List</p>
+           <form action="">
+            <input type="text" placeholder="Enter your email here">
+            <input type="submit" value="Subscribe now">
+           </form>
+        </div>
+        
+    </footer>
+
+<script src="js/resturant-js.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

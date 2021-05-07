@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif ;
+   overflow-x: hidden;
+}
+
+.clear-fix{
+    clear: both;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(19, 18, 18);
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+}
+ul{
+    text-align: center;
+}
+nav ul li{   
+    display: inline-block;
+    margin-left:15px ;
+}
+
+nav ul li a{
+    font-size: 18px;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li:hover{
+    transform: scale(1.1,1.1);
+    transition: all .2s;
+   
+}
+
+nav ul li a:hover{
+    color: coral;
+}
+/*--start image*/
+.image{
+  
+    width: 100%;
+    height: 600px;
+    border-bottom: 3px solid black;
+   
+   
+}
+.image img{
+width: 100%;
+height: 100%;
+}
+
+h1{
+    color: white;
+   margin-top: -400px;
+   text-align: center;
+   font-size: 60px;
+}
+span{
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+/*end image*/
+
+
+.contain_register{
+    width: 20%;
+    margin: 0px auto; 
+    margin-bottom: 20px;
+}
+.contain_register p{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+   
+}
+.register{
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;   
+}
+.register>form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.register>form>input{
+  width: 20%;
+  margin-left: 2%;
+  border: 2px solid black;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 0px;
+}
+
+.register>form>input:first-of-type{
+    width: 20%;
+    margin-left: 4%;
+}
+.register>form>input:last-of-type{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.register> form> select{
+    width: 20%;
+    margin-left: 2%;
+    border: 2px solid black;  
+    padding: 5px 0px;
+    font-size: 18px;
+}
+.register> form> select> option{
+    font-size: 20px;
+    line-height: 10px;
+}
+/*---*/
+.container_images{
+  border-top: 2px solid black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+}
+.container_images>img{
+   width: 20%;
+   height: 200px;
+}
+button{
+ border: none;
+ color: white;
+ background-color: rgb(255, 28, 28);
+ margin: 30px 50%;
+ font-size: 25px;
+ cursor: pointer;
+ padding: 5px 12px;
+}
+ button:hover{
+transform: scale(1.1,1.1);
+transition: all .3s;
+}
+
+.non-display{
+    display: none;
+}
+.display{
+    display: block;
+}
+
+
+/*-------------------------------------------*/
+footer{
+    background-color: rgb(36, 35, 35);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+   
+}
+
+footer .follow{
+   
+    color: white;
+}
+footer .follow i{  
+    font-size: 28px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    margin-left:10px ;
+    padding: 5px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+footer .follow i:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3s;
+}
+footer .send{  
+
+margin-top: 0px;
+}
+footer .send p{  
+    margin: 20px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    }
+footer .send form input{  
+    color: white;
+    padding: 7px;
+    outline: none;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    display: block;
+    background:none ;
+    
+}
+footer .send form input:nth-of-type(1):focus{
+box-shadow: 1px 1px 5px 1px rgb(114, 217, 248);
+border: 1px solid  rgb(114, 217, 248);
+}
+footer .send form input:nth-of-type(2){
+    font-size: 15px;
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+    width:150px;
+    background-color: white;
+    border-radius: 10px;
+}
+footer .send form input:nth-of-type(2):hover{
+    transform: scale(1.1,1.1);
+    transition: all .3s;
+    font-size: 16px;
+}

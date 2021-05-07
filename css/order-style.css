@@ -1,0 +1,667 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif ;
+
+}
+
+.clear-fix{
+    clear: both;
+}
+
+nav{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(19, 18, 18);
+position: fixed;
+z-index: 5;
+}
+ul{
+    text-align: center;
+}
+nav ul li{
+    
+    display: inline-block;
+    margin-left:15px ;
+}
+
+nav ul li a{
+    font-size: 18px;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li:hover{
+    transform: scale(1.1,1.1);
+    transition: all .2s;
+   
+}
+nav ul li a:hover{
+    color: coral;
+}
+/*--start image*/
+.image{
+    width: 100%;
+    height: 600px;
+}
+.image img{
+width: 100%;
+height: 100%;
+}
+/*end image*/
+
+/*start contain-menue-online*/
+.contain-menue-online{
+    width: 80%;
+    top: -380px;
+    height: 914px;
+    margin-left:10%;
+    position: relative;
+    background-color: white;
+    box-sizing: border-box;
+}
+.contain-menue-online h1{
+    text-align: center;
+    padding: 25px 0px;
+    transform: translateX(-58px);
+    font-size: 50px;
+}
+.contain-menue-online> div{
+    float: left;
+    z-index: 3;
+}
+.contain-menue-online >div:nth-of-type(1){
+width: 15%;
+background-color: white;
+}
+.contain-menue-online >div:nth-of-type(2){
+    width: 59%;
+    background-color: white;
+    border-top: 1px solid rgb(88, 87, 87);
+   
+}
+.contain-menue-online >div:nth-of-type(3){
+    width: 25.8%;
+    background-color: white;
+    border-top: 1px solid rgb(88, 87, 87);
+}
+
+.type-of-meals p:nth-of-type(1){
+    border-top:1px solid rgb(70, 69, 69) ;
+}
+
+.type-of-meals p:nth-of-type(3){
+    border-bottom:none ;
+}
+.type-of-meals p{
+    border-bottom: 1px solid rgb(70, 69, 69);
+    padding: 10px 0px;
+}
+
+.type-of-meals p:nth-of-type(1) span{
+   
+    padding:10px 0px 0px 40px;
+}
+.type-of-meals p:nth-of-type(1) i{
+    padding-left: 4px;
+    font-size: 30px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.type-of-meals p:nth-of-type(2) span{
+    position: relative;
+    top: 0px;
+    padding-left: 4px;
+}
+.type-of-meals p:nth-of-type(2) i{
+    font-size: 28px;
+    cursor: pointer;
+    margin:5px 0px 0px 80px;
+}
+.type-of-meals p:nth-of-type(3) span{
+    display: block;
+    font-size: 17px;
+    padding: 5px;
+    padding-top: 10px;
+    margin-bottom: 2px;
+
+   
+}
+.type-of-meals p:nth-of-type(3) span:hover{
+   background: rgb(199, 199, 199);
+   cursor: pointer;
+}
+
+.rotate{
+    transform: rotateZ(180deg);
+    transition: all .2s;
+    transform-origin: center;
+}
+.rotate-up{
+    transform: rotateZ(360deg);
+    transition: all .2s;
+    transform-origin: center;
+}
+
+/*---start price of meals----------*/
+.price-of-meals{
+    border-left: 1px solid rgb(185, 184, 184);
+    border-right: 1px solid rgb(185, 184, 184);
+}
+.price-of-meals > h3{
+    text-align: center;
+    margin: 10px 0px 10px 0px ;
+
+}
+.price-of-meals>div{
+    width: 100%;
+}
+.price-of-meals > p{
+    text-align: center;
+
+}
+.contain-antipasti{
+margin-top: 40px;
+box-sizing: border-box;
+}
+.contain-antipasti >div{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(88, 87, 87);
+    padding: 15px 0px;
+    cursor: pointer;
+}
+.contain-antipasti >div:last-of-type{
+    border-bottom:none;
+}
+.contain-antipasti >div:hover{
+    background-color: rgba(216, 216, 216,.5);
+    border-bottom: none;
+}
+.contain-antipasti >div >h4{
+    float: left;
+    margin-left: 25px;
+}
+.contain-antipasti >div >span{
+    float: right;
+    margin-right:20px ;
+}
+.contain-antipasti >div >p{
+    margin:15px 5px 0px 0px ;
+    padding-left: 25px;
+}
+/*---End price of meals----------*/
+
+/*start contain pitza*/
+.contain-pitza{
+    margin-top: 40px;
+box-sizing: border-box;
+}
+.contain-pitza > div{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 30px;
+    border-bottom: 1px solid rgb(88, 87, 87);
+    padding: 15px 0px 15px 10px;
+    cursor: pointer;
+}
+.contain-pitza >div:last-of-type{
+    border-bottom:none;
+}
+.contain-pitza >div:hover{
+    background-color: rgba(216, 216, 216,.5);
+    border-bottom: none;
+}
+.contain-pitza > div >h4{
+    float: left;    
+}
+
+.contain-pitza >div >span{
+    float: right;
+    margin-right:20px ;
+}
+
+.contain-pitza >div > p{
+    margin:15px 5px 0px 0px ;  
+}
+
+/* End contain pitza*/
+.display-none{
+    display: none;   
+}
+.display{
+    display: block;
+}
+/*start  my order*/
+.my-order > p{
+    padding: 30px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(122, 120, 120);
+    
+    
+}
+.my-order > p > span:nth-of-type(1){
+float: left;
+margin-left: 10px;
+}
+
+.my-order > p > span:nth-of-type(2){
+    float: right;
+    margin-right: 20px;
+    }
+.my-order > p > span:nth-of-type(2) input{
+        width: 15px;
+        outline: none;
+        border: none;
+}
+
+.my-order .order_requested{
+    border-bottom: 1px solid rgb(122, 120, 120);
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.my-order .order_requested>p{
+    padding: 10px;
+    background-color: rgba(231, 229, 229, 0.815);
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+.my-order .order_requested>p:last-of-type{
+    border-bottom: none
+}
+.my-order .subtotal{
+
+padding: 20px 0px 10px 10px;
+border-bottom: 1px solid rgb(122, 120, 120);
+}
+
+.my-order>button{
+    padding: 12px 10px;
+    background-color: black;
+    color: white;
+    margin: 20px 20px;
+    width: 220px;
+    font-weight:bold ;
+    font-size: 18px;
+    cursor: pointer;
+}
+.my-order>button:hover{
+    background-color: rgb(66, 66, 66);
+}
+.my-order>button>i{
+    padding-left: 10px;
+    font-size: 12px;
+}
+/*End  my order*/
+
+/*start all-antipasti-order-order*/
+
+.contain_allorder_of_antipasti>div{
+    width: 35%;
+    height: 300px;
+    background-color:white;
+    color:black;
+    position: fixed;
+    border: 1px solid black;
+    top: 180px;
+    left: 29%;
+    padding: 10px;
+    z-index: 6;
+
+}
+.contain_allorder_of_antipasti>div h4{
+    margin: 10px 0px 0px 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contain_allorder_of_antipasti>div p{
+    margin: 10px 0px 0px 20px;
+}
+
+.contain_allorder_of_antipasti>div> p:nth-of-type(3){
+   margin-left: 25px;
+}
+.contain_allorder_of_antipasti>div> p:nth-of-type(2){
+    width: 70%;
+    line-height: 22px;
+}
+.contain_allorder_of_antipasti>div> p:nth-of-type(4){
+    float: left;
+    padding-top: 40px;
+}
+.contain_allorder_of_antipasti>div> p:nth-of-type(5){
+    float: right;
+    margin-right: 20px;
+    padding-top: 40px;
+}
+
+.contain_allorder_of_antipasti>div> p:nth-of-type(5) i{
+  cursor: pointer;
+    padding: 4px;
+}
+.contain_allorder_of_antipasti>div> button{
+   margin-top: 15px;
+   padding: 10px;
+   width: 80%;
+   margin-left: 10%;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   background-color: rgb(36, 36, 36);
+   cursor:pointer ;
+   outline: none;
+   border: none;
+}
+.contain_allorder_of_antipasti>div> button:hover{
+    background-color: rgb(80, 80, 80);
+}
+.contain_allorder_of_antipasti>div> button >i{
+    padding-right: 10px;
+}
+.contain_allorder_of_antipasti>div>.fa-times{
+    position: absolute;
+    top: -15px;
+    right:-15px ;
+    border: 1px solid black;
+    border-radius: 49%;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.contain_allorder_of_antipasti>div>.fa-times:hover{
+    background-color: rgb(39, 38, 38);
+}
+
+/*end  all-antipasti-order*/
+
+
+/*start container to add my order Pizza*/
+.contain_allorder_of_PIZZA>div{
+    z-index: 6;
+}
+
+.contain_allorder_of_PIZZA>div{
+    width: 35%;
+    height: 300px;
+    background-color:white;
+    color:black;
+    position: fixed;
+    border: 1px solid black;
+    top: 250px;
+    left: 29%;
+    padding: 10px;
+}
+
+.contain_allorder_of_PIZZA>div h4{
+    margin: 10px 0px 0px 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contain_allorder_of_PIZZA>div p{
+    margin: 10px 0px 0px 20px;
+}
+
+.contain_allorder_of_PIZZA>div> p:nth-of-type(3){
+   margin-left: 25px;
+}
+.contain_allorder_of_PIZZA>div> p:nth-of-type(2){
+    width: 70%;
+    line-height: 22px;
+}
+.contain_allorder_of_PIZZA>div> p:nth-of-type(4){
+    float: left;
+    padding-top: 40px;
+}
+.contain_allorder_of_PIZZA>div> p:nth-of-type(5){
+    float: right;
+    margin-right: 20px;
+    padding-top: 40px;
+}
+
+.contain_allorder_of_PIZZA>div> p:nth-of-type(5) i{
+  cursor: pointer;
+    padding: 4px;
+}
+
+
+.contain_allorder_of_PIZZA>div> button{
+   margin-top: 15px;
+   padding: 10px;
+   width: 80%;
+   margin-left: 10%;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   background-color: rgb(36, 36, 36);
+   cursor:pointer ;
+   outline: none;
+   border: none;
+}
+.contain_allorder_of_PIZZA>div> button:hover{
+    background-color: rgb(80, 80, 80);
+}
+.contain_allorder_of_PIZZA>div> button >i{
+    padding-right: 10px;
+}
+.contain_allorder_of_PIZZA>div>.fa-times{
+    position: absolute;
+    top: -15px;
+    right:-15px ;
+    border: 1px solid black;
+    border-radius: 49%;
+    padding: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.contain_allorder_of_PIZZA>div>.fa-times:hover{
+    background-color: rgb(39, 38, 38);
+}
+
+
+/*end container to add my order Pizza*/
+
+
+
+.blur-on-all{
+    display: none;
+    top:0px;
+    left: 0px;
+    position: fixed;
+    z-index:3;
+  width: 1349px;
+  height: 1000px;
+  background-color:rgba(124, 123, 123, 0.7);
+}
+/*---End price of meals----------*/
+
+/*End contain-menue-online*/
+
+/*start footer*/
+footer{
+    background-color: rgb(36, 35, 35);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    padding: 30px 0px;
+    position: relative;
+}
+footer div{
+    width:30% ;
+    
+}
+footer .follow{
+   
+    margin-left:15% ;
+}
+footer .follow{
+   
+    color: white;
+}
+footer .follow i{  
+    font-size: 28px;
+    color: black;
+    background-color: white;
+    border-radius: 2px;
+    margin-left:10px ;
+    padding: 5px;
+    margin: 20px 10px;
+    cursor: pointer;
+}
+footer .follow i:hover{
+    transform: scale(1.1,1.1);
+    transition: all .3s;
+}
+footer .send{  
+margin-left:25% ;
+margin-top: 0px;
+}
+footer .send p{  
+    margin: 20px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    }
+footer .send form input{  
+    color: white;
+    padding: 7px;
+    outline: none;
+    width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    display: block;
+    background:none ;
+    
+}
+footer .send form input:nth-of-type(1):focus{
+box-shadow: 1px 1px 5px 1px rgb(114, 217, 248);
+border: 1px solid  rgb(114, 217, 248);
+}
+footer .send form input:nth-of-type(2){
+    font-size: 15px;
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+    width:150px;
+    background-color: white;
+    border-radius: 10px;
+}
+footer .send form input:nth-of-type(2):hover{
+    transform: scale(1.1,1.1);
+    transition: all .3s;
+    font-size: 16px;
+}
+/*End footer*/
+/*---- login---------------------------------------------------------------------------*/
+.container-login{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: -1454px;
+    width: 30%;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 60%;
+    z-index: 7; 
+    animation: down .5s ease-in-out;
+}
+
+.container-login input{
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    width: 80%;
+   padding: 20px 0px 10px 0px;
+   margin-left: 10%;
+   margin-top: 10%; 
+}
+.container-login input:nth-of-type(1){
+    margin-top: 10%;
+  
+}
+.container-login input:nth-of-type(2){
+    margin-bottom: 0%;
+  
+}
+.container-login input:nth-of-type(3){
+    margin-left:10%;
+   
+    width:initial;
+    display: inline-block;
+    margin-bottom: 20px;   
+}
+
+.container-login input:nth-of-type(4){
+    text-decoration: none;
+    color: black;  
+    margin:10px 0px ;
+   padding: 7px 0px;
+    background-color: rgb(113, 238, 96);
+    border-radius: 20px;
+    width: 200px;
+    margin-left: 84px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+ .container-login >input:nth-of-type(4):hover{
+  
+     color: white;
+     transition: all .5s ease-in-out;
+ }
+ .container-login span:nth-of-type(1){
+   display: inline-block;
+}
+.container-login span:nth-of-type(2){
+    margin-left: 10%;
+    display: block;
+    margin-top: 10%;
+}
+.container-login >a{
+   text-decoration: none;
+   margin-left: 10%;
+   color: black;
+
+}
+
+.animate{
+    top: 350px;
+    opacity: 1;
+    transition: all .5s;
+    position: fixed;
+}
+
+.animate2{
+    top: 1150px;
+    opacity: 1;
+    transition: all .5s;
+    position: fixed;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*add classes*/
+.no_display{
+    display: none;
+}
+.display{
+    display: block;
+}
+.non-click{
+    pointer-events: none;
+}

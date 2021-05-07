@@ -1,0 +1,78 @@
+body{
+    background: rgb(165, 165, 165);
+}
+.container-login{
+   
+  padding: 20px 0px; 
+    margin: 50px auto;
+    
+    width: 30%;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 60%;
+    z-index: 7; 
+    animation: down .5s ease-in-out;
+}
+
+.container-login input{
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    width: 80%;
+   padding: 20px 0px 10px 0px;
+   margin-left: 10%;
+   margin-top: 10%; 
+}
+.container-login input:nth-of-type(1){
+    margin-top: 10%;
+  
+}
+.container-login input:nth-of-type(2){
+    margin-bottom: 0%;
+  
+}
+.container-login input:nth-of-type(3){
+    margin-left:10%;
+   
+    width:initial;
+    display: inline-block;
+    margin-bottom: 20px;   
+}
+
+.container-login input:nth-of-type(4){
+    text-decoration: none;
+    color: black;  
+    margin:10px 0px ;
+   padding: 7px 0px;
+    background-color: rgb(113, 238, 96);
+    border-radius: 20px;
+    width: 200px;
+    margin-left: 84px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+ .container-login >input:nth-of-type(4):hover{
+  
+     color: white;
+     transition: all .5s ease-in-out;
+ }
+ .container-login span:nth-of-type(1){
+   display: inline-block;
+}
+.container-login span:nth-of-type(2){
+    margin-left: 10%;
+    display: block;
+    margin-top: 10%;
+}
+.container-login >a{
+   text-decoration: none;
+   margin-left: 10%;
+   color: black;
+
+}
