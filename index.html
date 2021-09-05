@@ -4,136 +4,540 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Estate</title>
-    <link rel="stylesheet" href="css/Home-style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/home2.css">
+    
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <a href="file:///D:/resturant-project/index.html">Home</a> </li>
-            <li><a href="file:///D:/resturant-project/order-menue.html">Order Online</a></li>
-            <li><a href="file:///D:/resturant-project/resturant.html"> Menue</a></li>
-            <li><a href="#reservation">Rservation</a> </li>
-            <li> <a href="#location"> Location & Hours</a></li>
-            <li> <a href="file:///D:/resturant-project/login.html">Login</a></li>
-        </ul>
-    </nav>
     
+<!--start upper-->
+<div class="upper-bar">
+    <div class="container">
+      <div class="row">
 
-   
-    <!------------------------------------------------------------------------->
-    
-        <div class="image">
-            <img src="css/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="">
-            
-                <h1>PIZZA SHOP
-            
-                    <span>TAKEOUT & DELIVERY</span>
-                </h1> 
+        <div class="col-sm  text-sm-left">
+          <i class="fas fa-phone-alt"></i> 5050505088900 , <i class="far fa-envelope"></i> hossam@mail.com
         </div>
-            
-       
-       
-            <div class="contain_register" id="reservation">
 
-            <p>Reservations</p>
+      
+      </div>
 
-            </div>
-       
-        <div class="register">
+    </div>
+  </div>
+<!--End upper-->
 
-            <form action="">
-                
-                <input type="date" value="date" required>
-               
-                
-                <input type="time" value="Time" required >
-               
-            <select id="cars"> 
-                        
-                <option value="Person 1"> Person 1</option>
-                <option value="Person 2"> Person 2</option>
-                <option value="Person 3"> Person 3</option>
-                <option value="Person 4"> Person 4</option>
-                <option value="Person 5"> Person 5</option>
-                <option value="Person 6"> Person 6</option>
-                <option value="Person 6"> Person 7</option>
-                      
-            </select>
+<!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span>Pizza</span><span>Corp</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about" >about</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#Connact">Connact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reservation">reservation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../resturant-project/login.html">Login</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="../resturant-project/menue.html">Menue</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="../resturant-project/order-online.html">Order online</a>
+              </li>
+             
+            </ul>
+  
+          </div>
+        </div>
+    
+  </nav>
+  <!--end navbar-->
+<div></div>
+  <!--start slieder-->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="overlay"></div>
+      <div class="carousel-item one active">
+        <img src="images/2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item two">
+        <img src="images/10.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item three">
+        <img src="images/4.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item four">
+        <img src="images/6.jpg" class="d-block w-100" alt="...">
+      </div>
+    
+    </div>
+  </div>
 
-                  <input type="submit" value="Register Now">
+  <div class="scroll-to">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+  <!--End slieder-->
+  <div class="head-reserve">
+    <h2>
+      PIZZA & ANTIPASTI
+    </h2>
+  </div> 
+  <!--start reservation-->
+  <section class = "banner" id="reservation">
+    <h2>BOOK YOUR TABLE NOW</h2>
+    <div class = "card-container">
+        <div class = "card-img wow animate__animated animate__fadeInLeft" id="wow">
+            <!-- image here -->
+        </div>
 
+        <div class = "card-content wow animate__animated animate__fadeInRight" >
+            <h3>Reservation</h3>
+            <form>
+                <div class = "form-row">
+                    <select name = "days" required>
+                        <option value = "day-select">Select Day</option>
+                        <option value = "sunday">Sunday</option>
+                        <option value = "monday">Monday</option>
+                        <option value = "tuesday">Tuesday</option>
+                        <option value = "wednesday">Wednesday</option>
+                        <option value = "thursday">Thursday</option>
+                        <option value = "friday">Friday</option>
+                        <option value = "saturday">Saturday</option>
+                    </select>
+
+                    <select name = "hours" required>
+                        <option value = "hour-select">Select Hour</option>
+                        <option value = "10">10: 00</option>
+                        <option value = "10">12: 00</option>
+                        <option value = "10">14: 00</option>
+                        <option value = "10">16: 00</option>
+                        <option value = "10">18: 00</option>
+                        <option value = "10">20: 00</option>
+                        <option value = "10">22: 00</option>
+                    </select>
+                </div>
+
+                <div class = "form-row">
+                    <input type = "text" placeholder="Full Name" required>
+                    <input type = "text" placeholder="Phone Number" required>
+                </div>
+
+                <div class = "form-row">
+                    <input type = "number" placeholder="How Many Persons?" min = "1" required>
+                    <input type = "submit" value = "BOOK TABLE">
+                </div>
             </form>
         </div>
-
-        <div class="container_images">
-           
-
-            <img src="images/1.jpg" alt="">
-            <img src="images/2.jpg" alt="">
-            <img src="images/3.jpg" alt="">
-            <img src="images/4.jpg" alt="">
-            <img src="images/5.jpg" alt="">
-            <img src="images/6.jpg" alt="">
-            <img src="images/7.jpg" alt="">
-            <img src="images/8.jpg" alt="">
-            <img src="images/9.jpg" alt="">
-            <img src="images/10.jpg" alt="">
-            <img src="images/11.jpg" alt="">      
-            <img src="images/1.jpg" alt="">
-            <img src="images/2.jpg" alt="">
-            <img src="images/3.jpg" alt="">
-            <img src="images/4.jpg" alt="">
-            <img src="images/5.jpg" alt="">
-            <img src="images/6.jpg" alt="">
-            <img src="images/7.jpg" alt="">
-            <img src="images/8.jpg" alt="">
-            <img src="images/9.jpg" alt="">
-            <img src="images/10.jpg" alt="">
-            <img src="images/11.jpg" alt="">
-           
-
-        </div>
-        
-        <button id="more">More</button>
-        
-    
-       
-
-    <!--start footer-->
-    <div class="contain_footer" >
-        <footer id="location">
-
-            <div class="follow">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-               
-
-                
-            <div class="send" >
-                <p>Join Our Mailing List</p>
-               <form action="">
-                <input type="text" placeholder="Enter your email here">
-                <input type="submit" value="Subscribe now">
-               </form>
-            </div>
-            <p>&copy 2023 by The Pizza Shop. Proudly created with team</p>
-            </div>
-    
-            <div>
-            <iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.4732188698517!2d31.21670371444419!3d30.
-     080630823818634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-        1!3m3!1m2!1s0x145840b8c9220f9f%3A0x8cb71efc2893ffa!2z2YXYt9i52YUg2KfZhNio2LHZhtiz!
-        5e0!3m2!1sen!2seg!4v1619849663621!5m2!1sen!2seg" 
-            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-        </div>
-        </footer>
     </div>
-     <!--End footer-->
-    <script src="js/Home.js"></script>
+</section>
+<!--end reservation-->
+<div class="header">
+<div class="container">
+ <h2>
+   ABOUT US
+ </h2>
+</div>
+</div>
+
+<div class="about_us" id="about">
+   <div class="container">
+     <div class="row">
+         <div class="about_us_text col-sm-12 col-md-12 col-lg-6 wow animate__animated animate__fadeInUp">
+           <p>
+            There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by injected humour, 
+            or randomised words which don't look even slightly believable. If you are going to use a 
+            passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+             All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+             making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+             combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+             The generated Lorem Ipsum is
+             therefore always free from repetition, injected humour, or non-characteristic words etc.
+           </p>
+
+           <p>
+            There are many variations of passages of Lorem Ipsum available, 
+            but the majority have suffered alteration in some form, by injected humour, 
+            or randomised words which don't look even slightly believable. If you are going to use a 
+            passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+             All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, 
+             making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+             combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+             The generated Lorem Ipsum is
+             therefore always free from repetition, injected humour, or non-characteristic words etc.
+           </p>
+         </div>
+
+         <div class="about_us_image col-sm-12 col-md-12 col-lg-6 wow animate__animated animate__fadeInUp">
+            <img src="css/pizza_chef.jpg" alt="">
+        </div>
+     </div>
+
+   </div>
+</div>
+
+<div class="our-work">
+  
+    <div class="container lighbox_contain">
+          <div class="headre">
+            <h3>
+              cheak our work
+            </h3>
+          </div>
+        <div class="choose">
+          <ul>
+            <li id="all_bt">All</li>
+            <li id="pasti_bt"> ANTIPASTI</li>
+            <li id="pizaa_bt"> PIZZA</li>
+          </ul>
+          
+        </div>
+      <div class="row Lightbox wow animate__animated animate__fadeIn">
+        <!--pizza-->
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </div>
+          <div class="column  col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+          </div>
+
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/5.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+          </div>
+          
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pizzashow">
+            <img src="images/pizza/7.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+          </div>
+          <!--antipasti-->
+          <div class="column col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/1.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/2.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+          </div>
+          <div class="column  col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/3.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+          </div>
+          <div class="column  col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/4.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/5.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+          </div>
+          <div class="column col-sm-12 col-md-4 col-lg-3 pastiShow">
+            <img src="images/antipasti/6.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+          </div>
+        
+        </div>
+        
+        </div>
+    </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">1 / 7</div> -->
+      <img src="images/pizza/1.jpg" style="width:80%" >
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">2 / 7</div> -->
+      <img src="images/pizza/2.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">3 / 7</div> -->
+      <img src="images/pizza/3.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">4 / 7</div> -->
+      <img src="images/pizza/4.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">5 / 7</div> -->
+      <img src="images/pizza/5.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">6 / 7</div> -->
+      <img src="images/pizza/6.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides">
+      <!-- <div class="numbertext">7 / 7</div> -->
+      <img src="images/pizza/7.jpg" style="width:80%">
+    </div>
+<!--antipasti-->
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">1 / 6</div> -->
+      <img src="images/antipasti/1.jpg"  style="width:80%">
+    </div>
+
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">2 / 6</div> -->
+      <img src="images/antipasti/2.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">3 / 6</div> -->
+      <img src="images/antipasti/3.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">4 / 6</div> -->
+      <img src="images/antipasti/4.jpg" style="width:80%">
+    </div>
+
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">5 / 6</div> -->
+      <img src="images/antipasti/5.jpg" style="width:80%">
+    </div>
+     
+    <div class="mySlides pastiShow">
+      <!-- <div class="numbertext">6 / 6</div> -->
+      <img src="images/antipasti/6.jpg" style="width:80%">
+    </div>
+
+    
+
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+     <div class="caption-container">
+      <p id="caption"></p>
+    </div> 
+
+    <!-- Thumbnail image controls -->
+    <!-- <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>  -->
+
+  </div>
+</div>
+<!-- start connactus-->
+<div class="connact-us wow animate__animated animate__fadeInUp" id="Connact">
+  <h2>Connact us</h2>
+   <div class="container">
+      <div class="row">
+        <!--icon-->
+        <div class="col-lg-6">
+       <div class="row  icons">
+        <div class="col-md-6">
+          <div class="info-box">
+            <i class="bi bi-geo-alt"></i>
+            <h3>Address</h3>
+            <p>A108 Adam Street,<br>New York, NY 535022</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box">
+            <i class="bi bi-telephone"></i>
+            <h3>Call Us</h3>
+            <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box">
+            <i class="bi bi-envelope"></i>
+            <h3>Email Us</h3>
+            <p>info@example.com<br>contact@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-box">
+            <i class="bi bi-clock"></i>
+            <h3>Open Hours</h3>
+            <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+          </div>
+        </div>
+       </div>
+        </div>
+ <!--input-->
+                 
+ <div class="col-lg-6">
+  <form action="forms/contact.php" method="post" class="php-email-form">
+    <div class="row gy-4">
+
+      <div class="col-md-6">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+
+      <div class="col-md-6 ">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="col-md-12">
+        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+      </div>
+
+      <div class="col-md-12">
+        <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <!-- <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+
+    </div>
+  </form>
+
+</div>
+
+      </div>
+   </div>
+</div>
+
+<!--end connactUs-->
+
+<!--start footer-->
+<div class="footer">
+  <div class="container">
+
+    <div class="row">
+
+      <div class=" col-md-6 col-lg-5">
+        <div class="site-info">
+    <span>Elite</span><span>Corp</span>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+    </p>
+    <a href="#">Read more</a>
+        </div>
+      </div>
+
+      <div class=" col-md-5 col-lg-4">
+        <div class="help-fullinks">
+          <h2>helpful links</h2>
+        <div class="row">
+          <div class="col-6">
+          <ul>
+              <li><i class="fas fa-chevron-right"></i> About</li>
+              <li><i class="fas fa-chevron-right"></i>Team</li>
+              <li><i class="fas fa-chevron-right"></i>Protofolio</li>
+              <li><i class="fas fa-chevron-right"></i>Pricing</li>
+          </ul>
+          </div>
+          <div class="col-6">
+            <ul>
+            <li><i class="fas fa-chevron-right"></i>F & Q</li>
+            <li><i class="fas fa-chevron-right"></i>Blog</li>
+            <li><i class="fas fa-chevron-right"></i>Benefit</li>
+            <li><i class="fas fa-chevron-right"></i>connact</li>
+          </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class=" col-md-3 col-lg-3">
+        <div class="connact"> 
+          <h2>Connact us</h2>
+       <p>5799 levo RoadNear readfort. US</p>
+       <p>phone: 5050505088900</p>
+       <p>Email: <a href="">hossam@mail.com</a></p>
+
+        </div>
+      </div>
+
+    </div>
+        
+  </div>
+
+    <div class="copywrite row">
+        <div class="col-md-6">
+          <p>copywrite 2017 Elitcrop | ALL WRITE RESERVED</p>
+        </div>
+
+          <div class="col-md-6">
+            <div class="socialli">
+              <i class="fab fa-facebook-square"></i> 
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+  </div> 
+
+</div>
+<!--end footer-->
+<div>
+
+</div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/poper.min.js"></script>
+  <script src="js/home2.js"></script>
+  <script src="js/home11.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+              new WOW().init();
+  </script>
 </body>
 </html>

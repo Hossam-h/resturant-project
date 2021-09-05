@@ -14,55 +14,31 @@ my_all_close=document.querySelectorAll('.fa-times'),
 all_minus=document.querySelectorAll('.fa-minus'),
 all_plus=document.querySelectorAll('.plus'),
 my_quantity=document.querySelectorAll('.quantity'),
-my_aadOrder=document.querySelectorAll('.add-order'),
-myItems=document.getElementById('number-item'),
+my_aadOrder=document.querySelectorAll('.add-order');
+let myItems=document.getElementById('number-item'),
 my_order_requsted=document.getElementById('order_requested'),
 all_h4Order=document.querySelectorAll('.order'),
 total=document.getElementById('total'),
-user=document.getElementById('user'),
+
 login=document.getElementById('login'),
-log=document.getElementById('log'),
+
 username=document.getElementById('user_name'),
 password=document.getElementById('show-pass'),
 
-close_order=document.querySelectorAll('p .fa-times');
+close_order=document.querySelectorAll('p .fa-times'),
+subOrder=document.getElementById('sub_order');
 
 let muarraystore=[];
 
 /* end Glopale variable */
 
-//console.log(my_aadOrder)
+
 
 let i=1;
-let number_item=0
-let number_order=0;
+let number_item=0;
+check()
 
-
-
-
-
-log.onclick=function(){
-    if(username.textContent==""){
-
-        login.classList.add('animate')
-        login.classList.remove('animate2')
-        blure_all.classList.add('display')
-    }else{
-        login.classList.remove('animate')
-        login.classList.add('animate2')
-        blure_all.classList.remove('display')
-    }
-
-    
-
-}
-
-user.onclick=function(){
-
-    login.classList.remove('animate2');
-    login.classList.add('animate');
-    blure_all.classList.add('display');
-}
+let dd=0;
 
 for(let i=0; i<my_quantity.length;i++){
     all_minus[i].setAttribute('data-count',i)
@@ -83,13 +59,8 @@ for(let i=0; i<my_quantity.length;i++){
     my_aadOrder[i].setAttribute('data-count',i)
 }
 
-//to remove order when click on .fa-times
 
-
-
-
-
-
+//to  decrement
 all_minus.forEach(all_minus_item=>{
     all_minus_item.onclick=function(){
        let el=document.getElementById(all_minus_item.getAttribute('data-count'))      
@@ -105,7 +76,7 @@ all_minus.forEach(all_minus_item=>{
     }
 })
 
-
+//to increament
 all_plus.forEach(all_plus_item=>{
     all_plus_item.onclick=function(){
        let el=document.getElementById(all_plus_item.getAttribute('data-count'))
@@ -153,38 +124,33 @@ function removeAll_order(){
 
 // to appear my order of Antipasti
 mycontain_Antipasti.forEach(Antipasti_ele=>{
-    let result=Antipasti_ele;
-   
-    result.onclick=function(){
+      
+    Antipasti_ele.onclick=function(){
         removeAll_order()
      
-        let el=document.getElementById(result.getAttribute("data-custom"))
+        let el=document.getElementById(Antipasti_ele.getAttribute("data-custom"))
          el.classList.add('display')
-         blure_all.classList.add('display')
+         blure_all.classList.add('display');
+         
+         
     }
 })
 
 mycontain_Pizza.forEach(Pizza_ele=>{
 
      Pizza_ele.onclick=function(){
+       
         removeAll_order()
+        
         let el=document.getElementById(Pizza_ele.getAttribute("data-custom"))
         el.classList.add('display')
-        blure_all.classList.add('display')
-
-    }
-})
-
-
-//function to add order 
-/*
-my_aadOrder.forEach(order_item=>{
-    order_item.onclick=function(){
-       
+        blure_all.classList.add('display');
         
+       
+
     }
 })
-*/
+
 
 
 myPitza.classList.add('display-none')
@@ -233,19 +199,17 @@ mySort.onclick= function(){
 /*----------------------------------------------------------------------------*/
 
 my_aadOrder[0].onclick=function(){
+   
 removeAll_order()
 blure_all.classList.remove('display')
 number_item++
+dd=number_item
 myItems.value=number_item;
 
 let myoredr_element0=document.createElement('p')
 
 myoredr_element0.textContent=all_h4Order[0].textContent +" " +" "+i*9+"$" 
 my_order_requsted.appendChild(myoredr_element0)
-
-
-
-
 
 let close1 =document.createElement('i')
 close1.classList.add('fa-times')
@@ -258,15 +222,13 @@ close1.onclick=function(){
     number_item--;
     myItems.value=number_item
 }
-my_aadOrder.forEach(add_Order=>{
+    my_aadOrder.forEach(add_Order=>{
 
-        let el=document.getElementById(add_Order.getAttribute('data-count'))
-          i=1
-          el.textContent=i   
-         
-})
-
-
+            let el=document.getElementById(add_Order.getAttribute('data-count'))
+            i=1
+            el.textContent=i           
+    })
+    check()
 }
 
 my_aadOrder[1].onclick=function(){
@@ -278,17 +240,12 @@ my_aadOrder[1].onclick=function(){
     let myoredr_element1=document.createElement('p');
     myoredr_element1.textContent=all_h4Order[1].textContent +" " +" "+i*9+"$" 
     my_order_requsted.appendChild(myoredr_element1)
-
-    
-    total.value+=i*9;
-    console.log(typeof(total.value));
-
-    let close2 =document.createElement('i')
-    close2.classList.add('fa-times')
-    close2.classList.add('fas')
-    myoredr_element1.appendChild(close2)
-    close2.style.float='right'
-    close2.style.cursor='pointer'
+    let close2 = document.createElement('i');
+    close2.classList.add('fa-times');
+    close2.classList.add('fas');
+    myoredr_element1.appendChild(close2);
+    close2.style.float='right';
+    close2.style.cursor='pointer';
     close2.onclick=function(){
         myoredr_element1.remove()
         number_item--;
@@ -300,7 +257,7 @@ my_aadOrder[1].onclick=function(){
     i=1
     el.textContent=i            
 })
-
+check()
 }
 
 my_aadOrder[2].onclick=function(){
@@ -333,6 +290,7 @@ my_aadOrder[2].onclick=function(){
          
           
 })
+check()
 }
 
 my_aadOrder[3].onclick=function(){
@@ -366,6 +324,7 @@ my_aadOrder[3].onclick=function(){
          
           
 })
+check()
 }
 
 my_aadOrder[4].onclick=function(){
@@ -399,6 +358,7 @@ my_aadOrder[4].onclick=function(){
           
           
 })
+check()
 }
 my_aadOrder[5].onclick=function(){
     removeAll_order()
@@ -428,6 +388,7 @@ my_aadOrder[5].onclick=function(){
           el.textContent=i   
                   
 })
+check()
 }
 
 my_aadOrder[6].onclick=function(){
@@ -460,6 +421,7 @@ my_aadOrder[6].onclick=function(){
           
           
 })
+check()
 }
 
 my_aadOrder[7].onclick=function(){
@@ -491,6 +453,7 @@ my_aadOrder[7].onclick=function(){
           el.textContent=i            
           
 })
+check()
 }
 
 my_aadOrder[8].onclick=function(){
@@ -521,6 +484,7 @@ my_aadOrder[8].onclick=function(){
         i=1
         el.textContent=i                     
 })
+check()
 }
 
 my_aadOrder[9].onclick=function(){
@@ -552,12 +516,14 @@ my_aadOrder[9].onclick=function(){
           el.textContent=i           
           
 })
+check()
 }
 
 my_aadOrder[10].onclick=function(){
     removeAll_order()
     blure_all.classList.remove('display')
     number_item++
+    
     myItems.value=number_item
     
     let myoredr_element10=document.createElement('p');
@@ -574,6 +540,7 @@ my_aadOrder[10].onclick=function(){
     close2.onclick=function(){
         myoredr_element10.remove()
         number_item--;
+      
         myItems.value=number_item;
     }
 
@@ -583,7 +550,22 @@ my_aadOrder[10].onclick=function(){
         i=1
           el.textContent=i   
     })
+    
+    check()
 }
+
+//validate to sub order
+function check(){
+    if(myItems.value==0 && my_order_requsted.hasChildNodes){
+        subOrder.classList.add('non-click')
+    }else{
+        subOrder.classList.remove('non-click')
+    }
+}
+
+//console.log()
+
+ 
 //----------------------------------------------------------------------
 
 

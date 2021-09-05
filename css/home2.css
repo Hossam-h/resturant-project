@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+   
+    scroll-behavior: smooth;
+}
+
+body{
+    --main-color:#08526d;
+    --main-color2:rgb(255, 52, 52);
+    height: 2000px;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/*start upper -------------*/
+.top{
+    margin-top: -30px;
+}
+.upper-bar{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    transition: all .2s;
+}
+.right {
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.col-sm span{
+    border: 1px solid red;
+    padding:2px 5px;
+}
+
+.bg-light{
+background-color: rgb(255, 255, 255) !important;
+}
+/* End upper -----------------*/
+
+
+/*start navbar*/
+
+.fixed{
+    position: fixed;
+    z-index: 4; 
+    width: 100%;
+    height: 120px;
+    margin-top: -40px;
+  padding-top: 30px;
+  
+   
+}
+
+ .navbar-nav{
+    text-align: left;
+}
+.navbar-brand span:first-of-type{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-brand span:last-of-type{
+    color: var(--main-color2);
+     font-size: 30px;
+}
+@media(max-width:991px){
+.navbar-collapse{
+    
+    z-index: 6;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+   margin-left: 0px;
+}
+
+
+}
+.navbar .container{
+   width: 100%;
+}
+
+.navbar-brand span{
+   font-size: 30px;
+}
+.me-auto {
+    
+    margin-left: auto !important;
+}
+.me-auto li{
+    padding:5px 10px 0px 0px ;
+   
+}
+
+.me-auto li::after{
+content: '';
+display: block;
+width: 0px;
+background-color: red;
+height: 2px;
+transition:width .3s;   
+}
+.me-auto li:hover::after{
+content: '';
+display: block;
+width: 100%;
+background-color: red;
+height: 2px;   
+}
+    
+
+.me-auto li a{  
+  color:black !important;
+  font-weight: bold;
+}
+.me-auto li a.active{
+    color: red !important;
+} 
+/*end nav bar*/
+
+/*satrt slider ---------------*/
+.carousel{
+   
+    position: relative;
+}
+.carousel-inner{
+ width: 100%;
+ height: 458px;
+}
+    
+    .carousel-inner .carousel-item{
+      background-size: cover !important;
+      width: 100%;
+      height: 100%;
+    }
+    .carousel-inner .carousel-item img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .carousel button{
+        opacity: 1;
+    }
+    .carousel-inner .overlay{
+     width: 100%;
+     height: 100%;
+     background-color: rgba(12, 12, 12,.5);
+     z-index: 1;
+        position: absolute;
+    }
+  
+/*End slider --------------*/
+
+/*arrow-up*/
+.scroll-to{
+    position: fixed;
+    top:90%;
+    left: 92%;
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    background-color: rgb(28, 164, 255);
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform .5s;
+}
+.scroll-to:hover{
+    transform: scale(1.05,1.05);
+}
+/*start reservation*/
+.head-reserve{
+   
+    color: white;
+    text-align: center;
+    
+    margin: 0px auto;
+    margin-top: 20px;
+   top: -300px;
+    position: relative;
+    z-index: 5;
+    
+}
+.head-reserve h2{
+    font-size: 50px !important;
+}
+.banner{
+    margin-top: -88px;
+    min-height: 100vh;
+    background-color: rgba(253, 215, 0, 0.493);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("banner-img.jpg") center/cover no-repeat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+    .card-container{
+        display: grid;
+        grid-template-columns: 420px 420px;
+    }
+    .card-img{
+        background: url("restaurant-in-valkenswaard.jpg") center/cover no-repeat;
+    }
+    .banner h2{
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        color: black;
+    }
+    .card-content{
+        background: #fff;
+        height: 330px;
+    }
+    .card-content h3{
+        text-align: center;
+        color: #000;
+        padding: 25px 0 10px 0;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .form-row{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+    form select, form input{
+        display: block;
+        width: 100%;
+        margin: 15px 12px;
+        padding: 5px;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #eee;
+        font-weight: 300;
+    }
+    form input[type = text], form input[type = number], form input::placeholder, select{
+        color: #9a9a9a;
+    }
+    form input[type = submit]{
+        color: #fff;
+        background: #f2745f;
+        padding: 12px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    form input[type = submit]:hover{
+        opacity: 0.9;
+    }
+    @media(max-width: 992px){
+        .card-container{
+            grid-template-columns: 100%;
+            width: 100vw;
+        }
+        .card-img{
+            height: 330px;
+        }
+        .banner{
+            background-color: white;
+            margin-top: 0px;
+        }
+        .head-reserve {
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+    }
+
+/*End reservation*/
+
+/*start aboutus*/
+.header {
+    background-color: rgb(41, 41, 41);
+    padding: 10px 0px;
+    border-radius: 0px 0px 40% 40%;
+    height: 90px;
+margin-bottom: 15px;
+}
+
+.header h2{
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+.container .choose ul{
+    width: 100% !important;
+    text-align: center;
+    
+}
+.container .choose ul li {
+  display:inline-block ;
+  text-decoration: none;
+  list-style: none;
+text-align: center;
+  font-size: 25px;
+  background-color: rgb(255, 231, 11);
+  padding: 7px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .5s;
+  margin-top: 4px;
+
+}
+.container .choose ul li:hover{
+    background-color: var(--main-color2);
+    color: white;
+   
+}
+
+.activfood{
+ background-color: var(--main-color2) !important;
+ color: white;
+}
+.container .choose ul li:nth-child(2) {
+padding-left: 10px;
+}
+    
+.about_us .container{
+    width: 100%;
+    margin-left: 0px ;
+    padding-right: 0px;
+   
+}
+.about_us .container .row{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.about_us .about_us_text{
+    margin-left:0px ;
+    padding-left: 0px;
+    height: 100%;
+    }
+.about_us .about_us_image img{
+width: 100%;
+height: 90%;
+margin-left: 174px;
+}
+@media (max-width:991px){
+    .about_us .about_us_image img{
+        margin-left: auto;
+    }
+}
+/*end aboutus*/
+  .our-work{
+      margin-top: 5%;
+  }
+  .container .headre h3{
+      text-align: center;
+      font-size: 35px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  /* .column {
+    float: left;
+    width: 25%;
+  } */
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 12;
+    padding-top: 50px;
+    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+.container .Lightbox img{
+    width: 100%;
+}
+.Lightbox .column{
+cursor: pointer;
+
+}
+.pizzashow img{
+    height: 80%;
+}
+.pastiShow img{
+    height: 80%;
+}
+  .modal-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    /* max-width: 1200px; */
+    height: 100%;
+    transition: all .5s;
+  }
+  .modal-content img{
+      width: 60%;
+      height: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+    background-color: black;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal .mySlides img{
+    /* height: 50% !important;
+  margin: 10px auto; */
+  padding-left: 15%;
+  padding-top: 5%;
+}
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 5px 4px 8px 1px rgb(167, 167, 167) ;
+  }
+/*end lightbox*/
+/*start connactus*/
+.connact-us{
+    margin-top: 50px;
+}
+.connact-us .container{
+    padding-top: 50px;
+}
+.connact-us h2{
+color: rgb(83, 83, 83);
+    text-align: center;
+    font-size: 40px;
+
+}
+.connact-us .container .icons .bi{
+    font-size: 40px;
+    padding-left: 10%;
+    color: #4154f1;
+    margin-bottom: 80px;
+}
+.connact-us .icons h3{
+   color:#012970 ; 
+   margin-top: 10px; 
+}
+.connact-us .gy-4 button{
+    
+}
+/*end connactus*/
+
+/*start footer*/
+/*start footer*/
+.footer{
+    margin-top: 50px;
+    background-color: rgba(218, 218, 218, 0.436);
+  overflow: hidden;
+  padding-top: 20px;
+}
+.footer .container .row> div {
+    margin-bottom: 40px;
+    
+}
+.footer .row>div .site-info{  
+    width: 98%;
+}
+.footer .row>div .site-info span{
+    padding-bottom: 40px;
+}
+.footer .row>div .site-info a{
+    text-decoration: none;
+margin-top: -10px;
+}
+.footer .row>div .site-info p{
+    text-decoration: none;
+margin-top: 30px;
+}
+.footer .row>div .site-info span:nth-of-type(1){
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+.footer .row>div .site-info span:nth-of-type(2){
+    color: var(--main-color2);
+    font-size: 30px;
+}
+
+.footer .help-fullinks h2{
+    margin-bottom: 40px;
+ margin-left: 40px;
+}
+.footer .help-fullinks ul li {
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.footer .help-fullinks ul li:hover {
+  transform: scale(1.05,1.05);
+  cursor: pointer;
+  transition: all .1s;
+}
+.footer .help-fullinks ul li i{
+    margin-right: 8px;
+}
+.footer .connact h2{
+    margin-bottom: 40px;
+}
+.footer .connact p{
+    margin-bottom: 35px;
+}
+.copywrite{
+    padding-top: 10px;
+    border-top: 1px solid black;
+    max-width: 100%;
+    margin-left: 0px;
+}
+.socialli{
+   margin-left: 52%;
+   
+}
+.copywrite .socialli i{
+    color: rgb(15, 15, 15);
+    font-size: 40px;
+    padding: 5px;
+    cursor: pointer;
+}
+.copywrite .socialli i:hover{
+    transform:scale(1.1,1.1) ;
+    transition: all .2s;
+}
+
+.copywrite >div:nth-of-type(1) p{
+   padding: 5px;
+}
+/*End footer*/
+/*end footer*/
+  /*add classlist*/
+  .display_non{
+      display: none;
+  }

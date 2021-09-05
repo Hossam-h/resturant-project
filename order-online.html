@@ -5,20 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>order-menue</title>
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   
     <link rel="stylesheet" href="css/order-style.css">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <a href="file:///D:/resturant-project/index.html">Home</a> </li>
-            <li><a href="file:///D:/resturant-project/order-menue.html">Order Online</a></li>
-            <li><a href="file:///D:/resturant-project/resturant.html"> Menue</a></li>
-            <li><a href="">Rservation</a> </li>
-            <li> <a href=""> Location & Hours</a></li>
-            <li> <a href="file:///D:/resturant-project/login.html">Login</a></li>
-        </ul>
-    </nav>
+    <div class="upper-bar">
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-sm  text-sm-left">
+              <i class="fas fa-phone-alt"></i> 5050505088900 , <i class="far fa-envelope"></i> hossam@mail.com
+            </div>
+    
+          
+          </div>
+    
+        </div>
+      </div>
+    <!--End upper-->
+    
+    <!--start navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><span>Pizza</span><span>Corp</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../resturant-project/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about" >about</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Connact">Connact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">reservation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../resturant-project/login.html">Login</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="../resturant-project/menue.html">Menue</a>
+                  </li>
+                 
+                 
+                </ul>
+      
+              </div>
+            </div>
+        
+      </nav>
+      <!--end navbar-->
+    
     <!------------------------------------------------------------------------->
         <div class="image">
             <img src="css/Eq_it-na_pizza-margherita_sep2005_sml.jpg" alt="">
@@ -27,7 +75,7 @@
 
   
        
-            <div class="container-login" id="login">
+            <!-- <div class="container-login" id="login">
             <form action="">
 
                 <input type="email" placeholder="Enter your username"  id="user_name" required >
@@ -38,7 +86,7 @@
                 <span>Don't have account ? <a href="file:///D:/resturant-project/signup.html">Signup</a> </span>
             
             </form>
-            </div>
+            </div> -->
   
 
     <!---------------------------------------------->
@@ -153,8 +201,9 @@
 </div>
 <!--End price of meals ----------------------------------------------->
                 <div class="my-order">
-                   
-                    <P> 
+                   <form action="" method="POST">
+                       
+                    <P class="our_order"> 
                         <span>my order</span> 
                         <span> (<input type="text" id="number-item"> item)</span>
                     </P>
@@ -163,12 +212,11 @@
 
                     </div>
 
-                    <div class="subtotal">
-                     <span>Subtotal</span> <input type="text" id="total">
-                    </div>
+                   
 
-                    <button>ORDER NOW <i class="fas fa-chevron-right"></i></button>
-                
+                    <button type="submit" id="sub_order">ORDER NOW <i class="fas fa-chevron-right"></i></button>
+                </form>
+
                 </div>
          </div>
 
@@ -402,25 +450,84 @@
          
     <div class="blur-on-all"></div>
   
-    <footer>
-        <div class="follow">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <p>&copy 2023 by The Pizza Shop. Proudly created with team</p>
+    <!--start footer-->
+<div class="footer">
+    <div class="container">
+  
+      <div class="row">
+  
+        <div class=" col-md-6 col-lg-5">
+          <div class="site-info">
+      <span>Elite</span><span>Corp</span>
+  
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+      </p>
+      <a href="#">Read more</a>
+          </div>
         </div>
-
-        <div class="send">
-            <p>Join Our Mailing List</p>
-           <form action="">
-            <input type="text" placeholder="Enter your email here">
-            <input type="submit" value="Subscribe now">
-           </form>
+  
+        <div class=" col-md-5 col-lg-4">
+          <div class="help-fullinks">
+            <h2>helpful links</h2>
+          <div class="row">
+            <div class="col-6">
+            <ul>
+                <li><i class="fas fa-chevron-right"></i> About</li>
+                <li><i class="fas fa-chevron-right"></i>Team</li>
+                <li><i class="fas fa-chevron-right"></i>Protofolio</li>
+                <li><i class="fas fa-chevron-right"></i>Pricing</li>
+            </ul>
+            </div>
+            <div class="col-6">
+              <ul>
+              <li><i class="fas fa-chevron-right"></i>F & Q</li>
+              <li><i class="fas fa-chevron-right"></i>Blog</li>
+              <li><i class="fas fa-chevron-right"></i>Benefit</li>
+              <li><i class="fas fa-chevron-right"></i>connact</li>
+            </ul>
+            </div>
+          </div>
+          </div>
         </div>
-        
-    </footer>
-
+  
+        <div class=" col-md-3 col-lg-3">
+          <div class="connact"> 
+            <h2>Connact us</h2>
+         <p>5799 levo RoadNear readfort. US</p>
+         <p>phone: 5050505088900</p>
+         <p>Email: <a href="">hossam@mail.com</a></p>
+  
+          </div>
+        </div>
+  
+      </div>
+          
+    </div>
+  
+      <div class="copywrite row">
+          <div class="col-md-6">
+            <p>copywrite 2017 Elitcrop | ALL WRITE RESERVED</p>
+          </div>
+  
+            <div class="col-md-6">
+              <div class="socialli">
+                <i class="fab fa-facebook-square"></i> 
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
+    </div> 
+  
+  </div>
+  <!--end footer-->
 <script src="js/resturant-js.js"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
